@@ -14,7 +14,7 @@
     <title>Trains</title>
 </head>
 
-<body>
+<body class="bg-image">
     @include('partials.header')
     @yield('content')
 </body>
