@@ -2,7 +2,7 @@
 @section('content')
     <div class="container my-5">
 
-        <table class="table table-info table-hover text-center">
+        <table class="table table-primary table-hover text-center">
             <thead>
                 <tr>
                     <th scope="col" class="fs-4 py-5">Azienda</th>
