@@ -1,33 +1,39 @@
 @extends('layouts.master')
 @section('content')
-    <table>
-        <thead>
-            <tr>
-                <th>Azienda</th>
-                <th>Stazione di partenza</th>
-                <th>Stazione di arrivo</th>
-                <th>Orario di partenza</th>
-                <th>Orario di arrivo</th>
-                <th>Codice treno</th>
-                <th>Totale carrozze</th>
-                <th>In orario</th>
-                <th>Cancellato</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($trains as $train)
+    <div class="container my-5">
+
+        <table class="table table-info table-hover text-center">
+            <thead>
                 <tr>
-                    <td>{{ $train->azienda }}</td>
-                    <td>{{ $train->stazione_di_partenza }}</td>
-                    <td>{{ $train->stazione_di_arrivo }}</td>
-                    <td>{{ $train->orario_di_partenza }}</td>
-                    <td>{{ $train->orario_di_arrivo }}</td>
-                    <td>{{ $train->codice_treno }}</td>
-                    <td>{{ $train->totale_carrozze }}</td>
-                    <td>{{ $train->in_orario ? 'Sì' : 'No' }}</td>
-                    <td>{{ $train->cancellato ? 'Sì' : 'No' }}</td>
+                    <th scope="col">Azienda</th>
+                    <th scope="col">Stazione di partenza</th>
+                    <th scope="col">Stazione di arrivo</th>
+                    <th scope="col">Orario di partenza</th>
+                    <th scope="col">Orario di arrivo</th>
+                    <th scope="col">Codice treno</th>
+                    <th scope="col">Totale carrozze</th>
+                    <th scope="col">In orario</th>
+                    <th scope="col">Cancellato</th>
                 </tr>
-            @endforeach
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach ($trains as $train)
+                    <tr>
+                        <td>{{ $train->azienda }}</td>
+                        <td>{{ $train->stazione_di_partenza }}</td>
+                        <td>{{ $train->stazione_di_arrivo }}</td>
+                        <td>{{ $train->orario_di_partenza }}</td>
+                        <td>{{ $train->orario_di_arrivo }}</td>
+                        <td>{{ $train->codice_treno }}</td>
+                        <td>{{ $train->totale_carrozze }}</td>
+                        <td class="{{ $train->in_orario ? 'bg-success' : 'bg-danger' }}">
+                            {{ $train->in_orario ? 'Sì' : 'No' }}
+                        </td>
+                        <td class="{{ $train->cancellato ? 'bg-danger' : 'bg-success' }}">
+                            {{ $train->cancellato ? 'Sì' : 'No' }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
 @endsection
