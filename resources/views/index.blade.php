@@ -5,15 +5,15 @@
         <table class="table table-primary table-hover text-center">
             <thead>
                 <tr>
-                    <th scope="col" class="fs-4 py-5">Azienda</th>
-                    <th scope="col" class="fs-4 py-5">Stazione di partenza</th>
-                    <th scope="col" class="fs-4 py-5">Stazione di arrivo</th>
-                    <th scope="col" class="fs-4 py-5">Orario di partenza</th>
-                    <th scope="col" class="fs-4 py-5">Orario di arrivo</th>
-                    <th scope="col" class="fs-4 py-5">Codice treno</th>
-                    <th scope="col" class="fs-4 py-5">Totale carrozze</th>
-                    <th scope="col" class="fs-4 py-5">In orario</th>
-                    <th scope="col" class="fs-4 py-5">Cancellato</th>
+                    <th scope="col" class="py-5">Azienda</th>
+                    <th scope="col" class="py-5">Stazione di partenza</th>
+                    <th scope="col" class="py-5">Stazione di arrivo</th>
+                    <th scope="col" class="py-5">Orario di partenza</th>
+                    <th scope="col" class="py-5">Orario di arrivo</th>
+                    <th scope="col" class="py-5">Codice treno</th>
+                    <th scope="col" class="py-5">Totale carrozze</th>
+                    <th scope="col" class="py-5">In orario</th>
+                    <th scope="col" class="py-5">Cancellato</th>
                 </tr>
             </thead>
             <tbody>
