@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Train;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,7 @@ class TrainsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        //importo il model e creo l'istanza
+
     }
 }
