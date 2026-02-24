@@ -14,6 +14,6 @@ class TrainsTableSeeder extends Seeder
     public function run(): void
     {
         //importo il model e creo l'istanza
-
+        $newTrain = new Train();
     }
 }
