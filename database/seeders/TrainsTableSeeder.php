@@ -13,7 +13,7 @@ class TrainsTableSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void
+    public function run(Faker $faker): void
     {
         //importo il model e creo l'istanza
         $newTrain = new Train();
